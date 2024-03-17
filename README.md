@@ -149,7 +149,6 @@ The following experiments demonstrate various pretraining setups using different
   ```shell
   CPUS_PER_TASK=8 GPUS_PER_NODE=8 GPUS=8 sh tools/slurm_train.sh $PARTITION simsiam_pretrain configs/simsiam/simsiam_resnet50_8xb32-coslr-200e_in1k_singleview_clipmask.py work_dirs/simsiam_resnet50_8xb32-coslr-200e_in1k_singleview_clipmask
   ```
-vv
 - **Linear Probe**:
   ```shell
   CPUS_PER_TASK=8 GPUS_PER_NODE=8 GPUS=8 sh tools/slurm_train.sh $PARTITION simsiam_linear configs/simsiam/benchmarks/resnet50_8xb512-linear-coslr-90e_in1k_clip.py work_dirs/simsiam_resnet50_8xb32-coslr-200e_in1k_diffssl_prob1_128w_clipmask/linear --cfg-options model.backbone.init_cfg.checkpoint=work_dirs/simsiam_resnet50_8xb32-coslr-200e_in1k_diffssl_prob1_128w_clipmask/epoch_200.pth
