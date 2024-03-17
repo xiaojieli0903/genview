@@ -1,0 +1,64 @@
+# Copyright (c) OpenMMLab. All rights reserved.
+from .barlowtwins import BarlowTwins
+from .base import BaseSelfSupervisor
+from .beit import VQKD, BEiT, BEiTPretrainViT
+from .byol import BYOL
+from .cae import CAE, CAEPretrainViT, DALLEEncoder
+from .densecl import DenseCL
+from .eva import EVA
+from .itpn import iTPN, iTPNHiViT
+from .mae import MAE, MAEHiViT, MAEViT
+from .maskfeat import HOGGenerator, MaskFeat, MaskFeatViT
+from .milan import MILAN, CLIPGenerator, MILANViT
+from .mixmim import MixMIM, MixMIMPretrainTransformer
+from .moco import MoCo
+from .mocov3 import MoCoV3, MoCoV3ViT
+from .simclr import SimCLR
+from .simmim import SimMIM, SimMIMSwinTransformer
+from .simsiam import SimSiam
+from .spark import SparK
+from .swav import SwAV
+
+from .diffmocov3 import DiffMoCoV3
+#from .diffmocov3_online import DiffMoCoV3Online
+#from .latentdiffmocov3 import LatentDiffMoCoV3
+
+
+__all__ = [
+    'BaseSelfSupervisor',
+    'BEiTPretrainViT',
+    'VQKD',
+    'CAEPretrainViT',
+    'DALLEEncoder',
+    'MAEViT',
+    'MAEHiViT',
+    'iTPNHiViT',
+    'iTPN',
+    'HOGGenerator',
+    'MaskFeatViT',
+    'CLIPGenerator',
+    'MILANViT',
+    'MixMIMPretrainTransformer',
+    'MoCoV3ViT',
+    'SimMIMSwinTransformer',
+    'MoCo',
+    'MoCoV3',
+    'BYOL',
+    'SimCLR',
+    'SimSiam',
+    'BEiT',
+    'CAE',
+    'MAE',
+    'MaskFeat',
+    'MILAN',
+    'MixMIM',
+    'SimMIM',
+    'EVA',
+    'DenseCL',
+    'BarlowTwins',
+    'SwAV',
+    'DiffMoCoV3',
+#    'DiffMoCoV3Online',
+#    'LatentDiffMoCoV3',
+    'SparK',
+]
