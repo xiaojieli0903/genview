@@ -5,8 +5,8 @@
 Welcome to the official repository of the "GenView: Enhancing View Quality with Pretrained Generative Model for Self-Supervised Learning".
 
 > **GenView: Enhancing View Quality with Pretrained Generative Model for Self-Supervised Learning**  
-> Xiaojie Li^1, [Yibo Yang](https://iboing.github.io/)^2, [Xiangtai Li](https://lxtgh.github.io/)^3, [Jianlong Wu](https://jlwu1992.github.io)^1, [Yue Yu](https://yuyue.github.io)^4, [Bernard Ghanem](https://www.bernardghanem.com/)^2, [Min Zhang](https://zhangminsuda.github.io)^1  
-> ^1Harbin Institute of Technology, Shenzhen, ^2King Abdullah University of Science and Technology, ^3Nanyang Technological University, ^4Peng Cheng Laboratory
+> Xiaojie Li^1,2, [Yibo Yang](https://iboing.github.io/)^3, [Xiangtai Li](https://lxtgh.github.io/)^4, [Jianlong Wu](https://jlwu1992.github.io)^1, [Yue Yu](https://yuyue.github.io)^2, [Bernard Ghanem](https://www.bernardghanem.com/)^3, [Min Zhang](https://zhangminsuda.github.io)^1  
+> ^1Harbin Institute of Technology, Shenzhen, ^2Peng Cheng Laboratory, ^3King Abdullah University of Science and Technology, ^4Nanyang Technological University, 
 
 ## Environment Setup and Code Deployment
 
