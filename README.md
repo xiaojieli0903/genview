@@ -191,9 +191,6 @@ If you find the repo useful for your research, please consider citing our paper:
   booktitle={arXiv preprint arXiv:2403.12003},
 }
 ```
-## 🔒 License
-
-This project is released under the [Apache 2.0 license](LICENSE).
 
 ## 👍 Acknowledgments
 
