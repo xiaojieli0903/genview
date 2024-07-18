@@ -39,7 +39,7 @@ pip install timm=0.9.7 open_clip==2.22.0 diffusers==0.21.4
 After cloning the repository, navigate to the `genview` directory and use `openmim` to install project dependencies:
 
 ```shell
-git clone <repository_url>  # Replace <repository_url> with the actual URL of the repository.
+git clone https://github.com/xiaojieli0903/genview.git
 cd genview
 pip install -U openmim
 mim install -e .
