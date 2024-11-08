@@ -330,6 +330,10 @@ def main():
                                                  model, preprocess,
                                                  batch_size=args.batch_size,
                                                  save_all=args.save)
+    # Get dimensions of the features
+    N, n_patches, feat_dim = features.shape[0], features.shape[1], \
+                             features.shape[2]
+
     if features is None:
         print('No features extracted. Exiting...')
         return
