@@ -188,7 +188,9 @@ If you find the repo useful for your research, please consider citing our paper:
   author={Li, Xiaojie and Yang, Yibo and Li, Xiangtai and Wu, Jianlong and Yu, Yue and Ghanem, Bernard and Zhang, Min},
   title={GenView: Enhancing View Quality with Pretrained Generative Model for Self-Supervised Learning}, 
   year={2024},
-  booktitle={arXiv preprint arXiv:2403.12003},
+  pages={306--325},
+  booktitle={Proceedings of the European Conference on Computer Vision},
+  publisher="Springer"
 }
 ```
 
