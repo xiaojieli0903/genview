@@ -8,6 +8,10 @@ This repository is the official implementation of "GenView: Enhancing View Quali
 > Xiaojie Li^1,2, [Yibo Yang](https://iboing.github.io/)^3, [Xiangtai Li](https://lxtgh.github.io/)^4, [Jianlong Wu](https://jlwu1992.github.io)^1, [Yue Yu](https://yuyue.github.io)^2, [Bernard Ghanem](https://www.bernardghanem.com/)^3, [Min Zhang](https://zhangminsuda.github.io)^1<br>
 > ^1Harbin Institute of Technology, Shenzhen, ^2Peng Cheng Laboratory, ^3King Abdullah University of Science and Technology, ^4Nanyang Technological University
 
+## 👷 Updates  
+
+- **11 Dec:** All pre-trained models have been uploaded to Hugging Face along with links in the Model Zoo. Dataset preparation for upload is in progress.  
+
 ## 🔨 Installation
 
 **Step 1: Create and Activate a Conda Environment**
@@ -178,8 +182,20 @@ The following experiments provide various pretraining setups using different arc
   CPUS_PER_TASK=8 GPUS_PER_NODE=8 GPUS=8 sh tools/slurm_train.sh $PARTITION mocov3vit_linear configs/mocov3/benchmarks/vit-base-p16_8xb128-linear-coslr-90e_in1k_clip.py work_dirs/mocov3_vit-base-p16_16xb256-amp-coslr-300e_in1k_singleview_clipmask/linear --cfg-options model.backbone.init_cfg.checkpoint=work_dirs/mocov3_vit-base-p16_16xb256-amp-coslr-300e_in1k_singleview_clipmask/epoch_300.pth
   ```
   
-## 📍 Model Zoo
-Coming soon.
+## 📍 Model Zoo  
+
+We have uploaded the pre-trained models to [Hugging Face](https://huggingface.co/Xiaojie0903/genview_pretrained_models). Access them directly using the links below:
+
+| **Method**        | **Backbone** | **Pretraining Epochs** | **Linear Probe Accuracy (%)** | **Model Link**                                                              |
+|-------------------|--------------|-------------------------|-------------------------------|-----------------------------------------------------------------------------|
+| MoCo v2 + GenView | ResNet-50    | 200                     | 70.0                          | [Download](https://huggingface.co/Xiaojie0903/genview_pretrained_models/resolve/main/mocov2_resnet50_8xb32-coslr-200e_in1k_genview.pth) |
+| SwAV + GenView    | ResNet-50    | 200                     | 71.7                          | [Download](https://huggingface.co/Xiaojie0903/genview_pretrained_models/resolve/main/swav_resnet50_8xb32-mcrop-coslr-200e_in1k_genview.pth) |
+| SimSiam + GenView | ResNet-50    | 200                     | 72.2                          | [Download](https://huggingface.co/Xiaojie0903/genview_pretrained_models/resolve/main/simsiam_resnet50_8xb32-coslr-200e_in1k_genview.pth) |
+| BYOL + GenView    | ResNet-50    | 200                     | 73.2                          | [Download](https://huggingface.co/Xiaojie0903/genview_pretrained_models/resolve/main/byol_resnet50_16xb256-coslr-200e_in1k_genview.pth) |
+| MoCo v3 + GenView | ResNet-50    | 100                     | 72.7                          | [Download](https://huggingface.co/Xiaojie0903/genview_pretrained_models/resolve/main/mocov3_resnet50_8xb512-amp-coslr-100e_in1k_genview.pth) |
+| MoCo v3 + GenView | ResNet-50    | 300                     | 74.8                          | [Download](https://huggingface.co/Xiaojie0903/genview_pretrained_models/resolve/main/mocov3_resnet50_8xb512-amp-coslr-300e_in1k_genview.pth) |
+| MoCo v3 + GenView | ViT-S        | 300                     | 74.5                          | [Download](https://huggingface.co/Xiaojie0903/genview_pretrained_models/resolve/main/mocov3_vit-small-p16_16xb256-amp-coslr-300e_in1k_genview.pth) |
+| MoCo v3 + GenView | ViT-B        | 300                     | 77.8                          | [Download](https://huggingface.co/Xiaojie0903/genview_pretrained_models/resolve/main/mocov3_vit-base-p16_16xb256-amp-coslr-300e_in1k_genview.pth) |
 
 ## ✏️ Citation
 If you find the repo useful for your research, please consider citing our paper:
