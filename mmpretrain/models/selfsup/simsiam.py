@@ -97,7 +97,7 @@ class SimSiam(BaseSelfSupervisor):
                 param.requires_grad = False
             self.standard_array = torch.Tensor(
                 np.load(
-                    "tools/clip_pca/output_convnext_base_w_laion2B-s13B-b82K-augreg/pca_vectors.npy").reshape(
+                    "tools/clip_pca/pca_results/convnext_base_w_laion2b-s13k-b82k-augreg/eigenvecters/pca_vectors.npy").reshape(
                     -1)).cuda()
             print(
                 f'Load standard_array done, shape = {self.standard_array.shape}')

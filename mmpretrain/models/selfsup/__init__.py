@@ -19,10 +19,6 @@ from .simsiam import SimSiam
 from .spark import SparK
 from .swav import SwAV
 
-from .diffmocov3 import DiffMoCoV3
-#from .diffmocov3_online import DiffMoCoV3Online
-#from .latentdiffmocov3 import LatentDiffMoCoV3
-
 
 __all__ = [
     'BaseSelfSupervisor',
@@ -57,8 +53,5 @@ __all__ = [
     'DenseCL',
     'BarlowTwins',
     'SwAV',
-    'DiffMoCoV3',
-#    'DiffMoCoV3Online',
-#    'LatentDiffMoCoV3',
     'SparK',
 ]
